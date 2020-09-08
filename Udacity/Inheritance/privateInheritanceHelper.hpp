@@ -40,31 +40,28 @@ private:
     string degree;
 
 public:
-    GradStudent();
-    void setDegree(string degreeIn);
-    string getDegree();
-    void setStudentId(int idIn);
-    int getStudentId();
+    GradStudent()
+    {
+        degree = "undelcared";
+    }
+
+    void setDegree(string degreeIn)
+    {
+        degree = degreeIn;
+    }
+
+    string getDegree()
+    {
+        return degree;
+    }
+
+    void setStudentId(int idIn)
+    {
+        setId(idIn);
+    }
+
+    int getStudentId()
+    {
+        return getId();
+    }
 };
-
-GradStudent::GradStudent()
-{
-    degree = "undelcared";
-}
-
-int GradStudent::getStudentId()
-{
-    return Student::getId();
-}
-void GradStudent::setStudentId(int idIn)
-{
-    Student::setId(idIn);
-}
-void GradStudent::setDegree(string degreeIn)
-{
-    degree = degreeIn;
-}
-string GradStudent::getDegree()
-{
-    return degree;
-}
