@@ -35,7 +35,7 @@ class Shape
          return length * width;
       }
       
-      int operator + (Shape shape1)
+      int operator + (Shape& shape1)
       {
         int total_length = getLength() + shape1.getLength();
         int total_width = getWidth() + shape1.getWidth();
