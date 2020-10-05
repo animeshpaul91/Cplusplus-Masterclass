@@ -12,3 +12,4 @@
 
 #Ignore all object files
 *.o
+*.pdf
