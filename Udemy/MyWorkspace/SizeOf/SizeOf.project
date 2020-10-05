@@ -98,7 +98,9 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
-    <File Name="carpetCleaning.cpp"/>
+    <File Name="carpetCleaning.h"/>
+    <File Name="imports.h"/>
+    <File Name="sizeOf.h"/>
     <File Name="main.cpp"/>
   </VirtualDirectory>
   <Dependencies Name="Debug"/>

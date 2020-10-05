@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/carpetCleaning.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
 
@@ -91,12 +91,6 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/carpetCleaning.cpp$(ObjectSuffix): carpetCleaning.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/carpetCleaning.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/carpetCleaning.cpp$(DependSuffix) -MM carpetCleaning.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/MyWorkspace/SizeOf/carpetCleaning.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/carpetCleaning.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/carpetCleaning.cpp$(PreprocessSuffix): carpetCleaning.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/carpetCleaning.cpp$(PreprocessSuffix) carpetCleaning.cpp
-
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/MyWorkspace/SizeOf/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
