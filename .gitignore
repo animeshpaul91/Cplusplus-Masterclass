@@ -9,7 +9,9 @@
 !*/
 
 .idea
+.codelite
 
 #Ignore all object files
 *.o
 *.pdf
+*.d
