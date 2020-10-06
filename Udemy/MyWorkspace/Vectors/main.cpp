@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+#include "vectorChallenge.h"
 
 int main() 
 {
@@ -44,5 +42,6 @@ int main()
     cout << movie_ratings.at(0).at(2) <<endl;
     cout << movie_ratings.at(0).at(3) <<endl;
     cout << endl;
+    challenge();
     return 0;
 }  
