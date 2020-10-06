@@ -3,7 +3,7 @@
 
 int main() 
 {
-//    getSizes();
+    getSizes();
     cleanCarpet();
     return 0;
 }  

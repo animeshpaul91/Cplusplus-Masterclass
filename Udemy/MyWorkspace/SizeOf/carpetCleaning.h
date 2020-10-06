@@ -13,16 +13,16 @@ void cleanCarpet()
     cin >> small_rooms;
     cout <<"\nEnter number of large rooms: ";
     cin >> large_rooms;
-    const double small_rooms_cost {small_rooms * price_for_small_room};
-    const double large_rooms_cost {large_rooms * price_for_large_room};
+    double small_rooms_cost {small_rooms * price_for_small_room};
+    double large_rooms_cost {large_rooms * price_for_large_room};
     cout <<"\nPrice for small room: "<< price_for_small_room;
     cout <<"\nPrice for large room: "<< price_for_large_room;
-    const double total_cost {small_rooms_cost + large_rooms_cost};
+    double total_cost {small_rooms_cost + large_rooms_cost};
     cout <<"\nTotal Cost: "<<total_cost;
-    const double tax {total_cost * tax_percent};
+    double tax {total_cost * tax_percent};
     cout <<"\nTax: "<< tax;
     cout <<"\n=====================================================";
-    double const total_estimate {total_cost + tax};
+    double total_estimate {total_cost + tax};
     cout <<"\nTotal Estimate: "<< total_estimate;
     cout <<endl;
 }
