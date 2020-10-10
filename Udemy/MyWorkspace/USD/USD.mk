@@ -3,10 +3,10 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=Vectors
+ProjectName            :=USD
 ConfigurationName      :=Debug
 WorkspacePath          :=/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/MyWorkspace
-ProjectPath            :=/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/MyWorkspace/Vectors
+ProjectPath            :=/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/MyWorkspace/USD
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -32,7 +32,7 @@ Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
-ObjectsFileList        :="Vectors.txt"
+ObjectsFileList        :="USD.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=mkdir -p
 LinkOptions            :=  -static
@@ -93,7 +93,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/MyWorkspace/Vectors/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/MyWorkspace/USD/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 

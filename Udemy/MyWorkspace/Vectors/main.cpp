@@ -1,8 +1,12 @@
 #include "vectorChallenge.h"
+using namespace std;
 
 int main() 
 {
     cout << "\nVectors" << endl;
+    cout << boolalpha;
+    bool flag = 0;
+    cout << flag << endl; // prints false
     vector<int> test_scores {100, 95, 99, 87, 88};
     cout<<test_scores[0]<<endl;
     cout<<test_scores[1]<<endl;
