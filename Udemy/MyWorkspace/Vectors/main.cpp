@@ -1,4 +1,5 @@
 #include "vectorChallenge.h"
+#include "forRangeLoops.h"
 using namespace std;
 
 int main() 
@@ -27,11 +28,11 @@ int main()
 //  vector<int> exam_scores (3); all of which will be initialized to 0
 //  vector<int> exam_scores (3, 100); all of which will be initialized to 100
 
-    cout << "Enter a test score: \n";
-    int score {0};
-    cin >> score;
-    test_scores.push_back(score);
-    cout<<"\nThere are now: "<<test_scores.size()<<" items in the vector\n";
+//    cout << "Enter a test score: \n";
+//    int score {0};
+//    cin >> score;
+//    test_scores.push_back(score);
+//    cout<<"\nThere are now: "<<test_scores.size()<<" items in the vector\n";
     
     vector <vector<int>> movie_ratings
     {
@@ -47,5 +48,7 @@ int main()
     cout << movie_ratings.at(0).at(3) <<endl;
     cout << endl;
     challenge();
+    forLoopVector();
+    forRangeLoops();
     return 0;
 }  

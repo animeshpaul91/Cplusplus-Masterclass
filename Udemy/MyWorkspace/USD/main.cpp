@@ -9,7 +9,7 @@ int main() {
     cout << "Enter an amount in cents: ";
     cin >> cents;
     
-    for(int i = 0; i < 5; i++)
+    for(int i {0}; i < 5; ++i)
     {
         parts[i] = cents / factors[i];
         cents %= factors[i];

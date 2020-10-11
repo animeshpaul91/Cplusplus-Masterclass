@@ -98,6 +98,7 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="forRangeLoops.h"/>
     <File Name="vectorChallenge.h"/>
     <File Name="main.cpp"/>
   </VirtualDirectory>

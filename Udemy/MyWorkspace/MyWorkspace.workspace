@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="MyWorkspace" Database="" Version="10000">
   <Project Name="SizeOf" Path="SizeOf/SizeOf.project" Active="No"/>
-  <Project Name="Vectors" Path="Vectors/Vectors.project" Active="No"/>
-  <Project Name="USD" Path="USD/USD.project" Active="Yes"/>
+  <Project Name="Vectors" Path="Vectors/Vectors.project" Active="Yes"/>
+  <Project Name="USD" Path="USD/USD.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
