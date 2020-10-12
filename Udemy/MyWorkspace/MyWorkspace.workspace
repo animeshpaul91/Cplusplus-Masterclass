@@ -3,7 +3,8 @@
   <Project Name="SizeOf" Path="SizeOf/SizeOf.project" Active="No"/>
   <Project Name="Vectors" Path="Vectors/Vectors.project" Active="No"/>
   <Project Name="USD" Path="USD/USD.project" Active="No"/>
-  <Project Name="ControlChallenge" Path="ControlChallenge/ControlChallenge.project" Active="Yes"/>
+  <Project Name="ControlChallenge" Path="ControlChallenge/ControlChallenge.project" Active="No"/>
+  <Project Name="CStyleStrings" Path="CStyleStrings/CStyleStrings.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -11,6 +12,7 @@
       <Project Name="Vectors" ConfigName="Debug"/>
       <Project Name="USD" ConfigName="Debug"/>
       <Project Name="ControlChallenge" ConfigName="Debug"/>
+      <Project Name="CStyleStrings" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -18,6 +20,7 @@
       <Project Name="Vectors" ConfigName="Release"/>
       <Project Name="USD" ConfigName="Release"/>
       <Project Name="ControlChallenge" ConfigName="Release"/>
+      <Project Name="CStyleStrings" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
