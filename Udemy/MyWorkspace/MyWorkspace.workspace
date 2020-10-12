@@ -6,6 +6,7 @@
   <Project Name="ControlChallenge" Path="ControlChallenge/ControlChallenge.project" Active="No"/>
   <Project Name="CStyleStrings" Path="CStyleStrings/CStyleStrings.project" Active="No"/>
   <Project Name="CplusplusStrings" Path="CplusplusStrings/CplusplusStrings.project" Active="Yes"/>
+  <Project Name="StringChallenge" Path="StringChallenge/StringChallenge.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -15,6 +16,7 @@
       <Project Name="ControlChallenge" ConfigName="Debug"/>
       <Project Name="CStyleStrings" ConfigName="Debug"/>
       <Project Name="CplusplusStrings" ConfigName="Debug"/>
+      <Project Name="StringChallenge" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -24,6 +26,7 @@
       <Project Name="ControlChallenge" ConfigName="Release"/>
       <Project Name="CStyleStrings" ConfigName="Release"/>
       <Project Name="CplusplusStrings" ConfigName="Release"/>
+      <Project Name="StringChallenge" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
