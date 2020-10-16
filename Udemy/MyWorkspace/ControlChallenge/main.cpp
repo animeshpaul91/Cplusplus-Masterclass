@@ -3,6 +3,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+char getSelection()
+{
+    char choice;
+    cout <<"\n------------------MENU-------------------\n";
+    cout <<"\n P - Print Numbers";
+    cout <<"\n A - Add a Number";
+    cout <<"\n M - Display Mean of the Numbers";
+    cout <<"\n S - Display the Smallest Number";
+    cout <<"\n L - Display the Largest Number";
+    cout <<"\n C - Clear Vector";
+    cout <<"\n Q - Quit";
+    cout <<"\n\nEnter your choice: ";
+    fflush(stdin);
+    cin >> choice;
+    return choice;
+}
+
 void display(const vector<int> &vec)
 {
     if (vec.size() == 0)
@@ -34,6 +51,9 @@ double getMean(const vector<int> &vec)
 
 int getMax(const vector<int> &vec)
 {
+    if (vec.size() == 0)
+        return 0;
+        
     int imax = INT_MIN;
     for(int num: vec)
         if (num > imax)
@@ -43,6 +63,9 @@ int getMax(const vector<int> &vec)
 
 int getMin(const vector<int> &vec)
 {
+    if (vec.size() == 0)
+        return 0;
+        
     int imin = INT_MAX;
     for(int num: vec)
         if (num < imin)
@@ -57,17 +80,7 @@ int main() {
     
     do 
     {
-        cout <<"\n------------------MENU-------------------\n";
-        cout <<"\n P - Print Numbers";
-        cout <<"\n A - Add a Number";
-        cout <<"\n M - Display Mean of the Numbers";
-        cout <<"\n S - Display the Smallest Number";
-        cout <<"\n L - Display the Largest Number";
-        cout <<"\n C - Clear Vector";
-        cout <<"\n Q - Quit";
-        cout <<"\n\nEnter your choice: ";
-        fflush(stdin);
-        cin >> choice;
+        choice = getSelection();
         switch(choice)
         {
             case 'P':

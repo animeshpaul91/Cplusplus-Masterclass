@@ -3,10 +3,10 @@
   <Project Name="SizeOf" Path="SizeOf/SizeOf.project" Active="No"/>
   <Project Name="Vectors" Path="Vectors/Vectors.project" Active="No"/>
   <Project Name="USD" Path="USD/USD.project" Active="No"/>
-  <Project Name="ControlChallenge" Path="ControlChallenge/ControlChallenge.project" Active="No"/>
+  <Project Name="ControlChallenge" Path="ControlChallenge/ControlChallenge.project" Active="Yes"/>
   <Project Name="CStyleStrings" Path="CStyleStrings/CStyleStrings.project" Active="No"/>
   <Project Name="CplusplusStrings" Path="CplusplusStrings/CplusplusStrings.project" Active="No"/>
-  <Project Name="StringChallenge" Path="StringChallenge/StringChallenge.project" Active="Yes"/>
+  <Project Name="StringChallenge" Path="StringChallenge/StringChallenge.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
