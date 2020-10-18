@@ -84,6 +84,8 @@ int main() {
     cout << "Result: " ;
     print(results, results_size);
     
+    delete [] results;
+    
     cout << endl;
 
     return 0;
