@@ -3,17 +3,22 @@
 #include <string>
 using namespace std;
 
+void displayVector(const vector<string> *const vector_ptr)
+{
+    // This function can neither alter the pointer nor dereference it.
+    // Iterating through Vector Pointer 
+    for (auto stooge: *vector_ptr) // *vector_ptr resolves to stooges
+        cout << stooge << endl;
+}
+
 int main() {
     vector<string> stooges {"Larry", "Moe", "Curly"};
     vector<string> *vector_ptr {nullptr};
     vector_ptr = &stooges;
     
     cout << "First Stooge: "<< (*vector_ptr).at(0) << endl;
+    displayVector(vector_ptr);
     
-    // Iterating through Vector Pointer 
-    for (auto stooge: *vector_ptr) // *vector_ptr resolves to stooges
-        cout << stooge << endl;
-        
     // Dynamic Memory Allocation 
     int *int_ptr {nullptr};
     int_ptr = new int; // Memory allocated from the heap
