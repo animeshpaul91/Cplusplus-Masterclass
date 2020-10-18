@@ -7,7 +7,8 @@
   <Project Name="CStyleStrings" Path="CStyleStrings/CStyleStrings.project" Active="No"/>
   <Project Name="CplusplusStrings" Path="CplusplusStrings/CplusplusStrings.project" Active="No"/>
   <Project Name="StringChallenge" Path="StringChallenge/StringChallenge.project" Active="No"/>
-  <Project Name="Pointers" Path="Pointers/Pointers.project" Active="Yes"/>
+  <Project Name="Pointers" Path="Pointers/Pointers.project" Active="No"/>
+  <Project Name="Pointers_and_const" Path="Pointers_and_const/Pointers_and_const.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -19,6 +20,7 @@
       <Project Name="CplusplusStrings" ConfigName="Debug"/>
       <Project Name="StringChallenge" ConfigName="Debug"/>
       <Project Name="Pointers" ConfigName="Debug"/>
+      <Project Name="Pointers_and_const" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -30,6 +32,7 @@
       <Project Name="CplusplusStrings" ConfigName="Release"/>
       <Project Name="StringChallenge" ConfigName="Release"/>
       <Project Name="Pointers" ConfigName="Release"/>
+      <Project Name="Pointers_and_const" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
