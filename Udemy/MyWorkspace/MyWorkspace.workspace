@@ -10,8 +10,8 @@
   <Project Name="Pointers" Path="Pointers/Pointers.project" Active="No"/>
   <Project Name="Pointers_and_const" Path="Pointers_and_const/Pointers_and_const.project" Active="No"/>
   <Project Name="References" Path="References/References.project" Active="No"/>
-  <Project Name="Debugger" Path="Debugger/Debugger.project" Active="No"/>
-  <Project Name="PointersChallenge" Path="PointersChallenge/PointersChallenge.project" Active="Yes"/>
+  <Project Name="Debugger" Path="Debugger/Debugger.project" Active="Yes"/>
+  <Project Name="PointersChallenge" Path="PointersChallenge/PointersChallenge.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
