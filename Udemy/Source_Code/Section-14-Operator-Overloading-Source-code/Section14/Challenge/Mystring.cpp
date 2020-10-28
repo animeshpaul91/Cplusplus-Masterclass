@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include "Mystring.h"
+using namespace::std;
 
  // No-args constructor
 Mystring::Mystring() 
@@ -90,3 +91,80 @@ std::istream &operator>>(std::istream &in, Mystring &rhs) {
     return in;
 }
 
+Mystring Mystring::operator-()
+{
+    size_t length = strlen(str) + 1;
+    char *buff = new char[length];
+    strcpy(buff, str);
+    for(size_t i = 0; i < length - 1; i++)
+        buff[i] = tolower(buff[i]);
+    Mystring temp {buff};
+    delete [] buff;
+    return temp;
+}
+
+bool Mystring::operator==(const Mystring &rhs)
+{
+    return strcmp(str, rhs.str) == 0;
+}
+
+bool Mystring::operator!=(const Mystring &rhs)
+{
+    return strcmp(str, rhs.str) != 0;
+}
+
+bool Mystring::operator<(const Mystring &rhs)
+{
+    return strcmp(str, rhs.str) < 0;
+}
+
+bool Mystring::operator>(const Mystring &rhs)
+{
+    return strcmp(str, rhs.str) > 0;
+}
+
+Mystring Mystring::operator+(const Mystring &rhs) const
+{
+    size_t new_length = strlen(str) + strlen(rhs.str) + 1;
+    char *buff = new char[new_length];
+    strcpy(buff, str);
+    strcat(buff, rhs.str);
+    Mystring temp {buff};
+    delete [] buff;
+    return temp;
+}
+
+Mystring &Mystring::operator+=(const Mystring &rhs)
+{
+    *this = *this + rhs;
+    return *this;
+}
+
+Mystring Mystring::operator*(const size_t &n)
+{
+    Mystring temp {*this};    
+    for(size_t i = 0; i < n - 1; i++)
+        temp += *this;    
+    return temp;
+}
+
+Mystring &Mystring::operator*=(const size_t &n)
+{
+    *this = *this * n;
+    return *this;
+}
+
+Mystring &Mystring::operator++()
+{
+    for(size_t i = 0; i < strlen(str); i++)
+        str[i] = toupper(str[i]);
+        
+    return *this;
+}
+
+Mystring Mystring::operator++(int)
+{
+    Mystring temp {*this};
+    operator++();
+    return temp;
+}

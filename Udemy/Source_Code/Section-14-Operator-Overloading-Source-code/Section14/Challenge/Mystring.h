@@ -17,6 +17,17 @@ public:
     
     Mystring &operator=(const Mystring &rhs);     // Copy assignment
     Mystring &operator=(Mystring &&rhs);           // Move assignment
+    Mystring operator-();
+    bool operator==(const Mystring &rhs);
+    bool operator!=(const Mystring &rhs);
+    bool operator<(const Mystring &rhs);
+    bool operator>(const Mystring &rhs);
+    Mystring operator+(const Mystring &rhs) const;
+    Mystring &operator+=(const Mystring &rhs);
+    Mystring operator*(const size_t &n);
+    Mystring &operator*=(const size_t &n);
+    Mystring &operator++();
+    Mystring operator++(int);
     
     void display() const;
     
