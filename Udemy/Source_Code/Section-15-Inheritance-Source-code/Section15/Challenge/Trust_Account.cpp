@@ -16,7 +16,7 @@ bool Trust_Account::deposit(double amount) {
 bool Trust_Account::withdraw(double amount) {
     double balance = get_balance();
     
-    if (amount < 0.2 * balance && ++withdrawal_number < 4)
+    if (++withdrawal_number < 4 && amount < 0.2 * balance)
         return Savings_Account::withdraw(amount);
     return false;
 }
