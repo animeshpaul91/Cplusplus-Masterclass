@@ -4,6 +4,7 @@
 #include <vector>
 #include "Savings_Account.h"
 #include "Checking_Account.h"
+#include "Trust_Account.h"
 #include "Account_Util.h"
 
 using namespace std;
@@ -46,6 +47,21 @@ int main() {
     display(check_accounts);
     deposit(check_accounts, 1000);
     withdraw(check_accounts, 2000);
+    
+    // Trust 
+
+    vector<Trust_Account> trust_accounts;
+    trust_accounts.push_back(Trust_Account {} );
+    trust_accounts.push_back(Trust_Account {"Sandeep Gohain"} );
+    trust_accounts.push_back(Trust_Account {"Boris Laishram", 4000} );
+    trust_accounts.push_back(Trust_Account {"Animesh Paul", 5555, 5.0} );
+
+    display(trust_accounts);
+    deposit(trust_accounts, 6000);
+    withdraw(trust_accounts, 1000);
+    withdraw(trust_accounts, 1000);
+    withdraw(trust_accounts, 1000);
+    withdraw(trust_accounts, 1000);
     
 
     return 0;
