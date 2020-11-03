@@ -5,16 +5,16 @@ Savings_Account::Savings_Account(std::string name, double balance, double int_ra
 }
 
 
-virtual void Savings_Account::print(std::ostream &os) const override {
-    os << "[Savings_Account: " << account.name << ": " << account.balance << ", " << account.int_rate << "]";
+void Savings_Account::print(std::ostream &os) const {
+    os << "[Savings_Account: " << name << ": " << balance << ", " << int_rate << "]";
 }
 
-virtual bool Savings_Account::deposit(double amount) override {
+bool Savings_Account::deposit(double amount) {
     amount += amount * (int_rate/100);
     return Account::deposit(amount);
 }
 
-virtual bool withdraw(double amount) override {
+bool Savings_Account::withdraw(double amount) {
     return Account::withdraw(amount);
 }
 
