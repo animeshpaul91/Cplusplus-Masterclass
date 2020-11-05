@@ -53,6 +53,7 @@ However, feel free to modify these as you wish
 #include <memory>
 #include <vector>
 
+
 class Test {
 private:
     int data;
@@ -64,9 +65,32 @@ public:
 };
 
 // Function prototypes
-std::unique_ptr<std::vector<std::shared_ptr<Test>>> make();
-void fill(std::vector<std::shared_ptr<Test>> &vec, int num);
-void display(const std::vector<std::shared_ptr<Test>>&vec);
+std::unique_ptr<std::vector<std::shared_ptr<Test>>> make()
+{
+    std::unique_ptr<std::vector<std::shared_ptr<Test>>> vec_ptr = std::make_unique<std::vector<std::shared_ptr<Test>>>();
+    return vec_ptr;
+}
+
+void fill(std::vector<std::shared_ptr<Test>> &vec, int num)
+{
+    int data;
+    for(int i = 1; i < num + 1; i++) {
+        std::cout << "\nEnter data point ["<<i<<"] : ";
+        std::cin >> data;
+        vec.push_back(std::make_unique<Test>(data));
+    }
+}
+
+void display(const std::vector<std::shared_ptr<Test>>&vec)
+{
+    std::cout<<"\nDisplaying Vector Data";
+    std::cout<<"\n=======================\n";
+    
+    for(auto &test_obj: vec)
+        std::cout<<test_obj->get_data()<<std::endl;
+        
+    std::cout<<"=======================";
+}
 
 int main() {
     std::unique_ptr<std::vector<std::shared_ptr<Test>>> vec_ptr;
@@ -76,5 +100,6 @@ int main() {
     std::cin >> num;
     fill(*vec_ptr, num);
     display(*vec_ptr);
+    std::cout<<std::endl;   
     return 0;
 }
