@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="C:\Users\frank\Desktop\CPPExamples\Section17\Section17.workspace">
-  <int Value="1" Name="m_selectedTab"/>
-  <wxString Value="C:\Users\frank\Desktop\CPPExamples\Section17\Section17.workspace" Name="m_workspaceName"/>
+<Session Name="/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/Source_Code/Section-17-Smart-Pointers-Source-code/Section17/Section17.workspace">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/Source_Code/Section-17-Smart-Pointers-Source-code/Section17/Section17.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\frank\Desktop\CPPExamples\Section17\Challenge\Description.txt" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <wxString Value="/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/Source_Code/Section-17-Smart-Pointers-Source-code/Section17/Challenge/main.cpp" Name="FileName"/>
+      <int Value="96" Name="FirstVisibleLine"/>
+      <int Value="104" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\frank\Desktop\CPPExamples\Section17\Challenge\main.cpp" Name="FileName"/>
-      <int Value="24" Name="FirstVisibleLine"/>
-      <int Value="67" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\frank\Desktop\CPPExamples\Section17\ChallengeSolution\main.cpp" Name="FileName"/>
-      <int Value="27" Name="FirstVisibleLine"/>
-      <int Value="63" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\frank\Desktop\CPPExamples\Section17\ChallengeSolution\Description.txt" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="16" Name="CurrentLine"/>
+      <wxString Value="/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/Source_Code/Section-17-Smart-Pointers-Source-code/Section17/UniquePointers/main.cpp" Name="FileName"/>
+      <int Value="21" Name="FirstVisibleLine"/>
+      <int Value="2" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -35,7 +21,7 @@
   <SerializedObject Name="m_breakpoints">
     <long Value="4" Name="Count"/>
     <SerializedObject Name="Breakpoint0">
-      <wxString Value="C:\Users\frank\Desktop\CPPExamples\Section17\SharedPointers\main.cpp" Name="file"/>
+      <wxString Value="/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/Source_Code/Section-17-Smart-Pointers-Source-code/Section17/C:\Users\frank\Desktop\CPPExamples\Section17\SharedPointers\main.cpp" Name="file"/>
       <int Value="23" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
       <wxString Value="" Name="memory_address"/>
@@ -51,7 +37,7 @@
       <int Value="0" Name="origin"/>
     </SerializedObject>
     <SerializedObject Name="Breakpoint1">
-      <wxString Value="C:\Users\frank\Desktop\CPPExamples\Section17\SharedPointers\main.cpp" Name="file"/>
+      <wxString Value="/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/Source_Code/Section-17-Smart-Pointers-Source-code/Section17/C:\Users\frank\Desktop\CPPExamples\Section17\SharedPointers\main.cpp" Name="file"/>
       <int Value="31" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
       <wxString Value="" Name="memory_address"/>
@@ -67,7 +53,7 @@
       <int Value="0" Name="origin"/>
     </SerializedObject>
     <SerializedObject Name="Breakpoint2">
-      <wxString Value="C:\Users\frank\Desktop\CPPExamples\Section17\SharedPointers\main.cpp" Name="file"/>
+      <wxString Value="/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/Source_Code/Section-17-Smart-Pointers-Source-code/Section17/C:\Users\frank\Desktop\CPPExamples\Section17\SharedPointers\main.cpp" Name="file"/>
       <int Value="42" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
       <wxString Value="" Name="memory_address"/>
@@ -83,7 +69,7 @@
       <int Value="0" Name="origin"/>
     </SerializedObject>
     <SerializedObject Name="Breakpoint3">
-      <wxString Value="C:\Users\frank\Desktop\CPPExamples\Section17\SharedPointers\main.cpp" Name="file"/>
+      <wxString Value="/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/Source_Code/Section-17-Smart-Pointers-Source-code/Section17/C:\Users\frank\Desktop\CPPExamples\Section17\SharedPointers\main.cpp" Name="file"/>
       <int Value="59" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
       <wxString Value="" Name="memory_address"/>
@@ -99,4 +85,5 @@
       <int Value="0" Name="origin"/>
     </SerializedObject>
   </SerializedObject>
+  <wxString Value="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.inc;*.mm;*.m;*.xrc;*.plist;*.txt" Name="m_findInFilesMask"/>
 </Session>
