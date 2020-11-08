@@ -6,6 +6,8 @@
 #include <vector>
 #include <string>
 
+using namespace std;
+
 struct City {
     std::string name;
     long population;
@@ -22,6 +24,11 @@ struct Tours {
     std::string title;
     std::vector<Country> countries;
 };
+
+void ruler() {
+    cout<<"\n1234567890123456789012345678901234567890123456789012345678901234567890"<<endl;
+}
+
 
 int main()
 {
@@ -67,7 +74,7 @@ int main()
                           << std::endl;
         }
     }
-
-    std::cout << std::endl << std::endl;
+    
+    
     return 0;
 }
