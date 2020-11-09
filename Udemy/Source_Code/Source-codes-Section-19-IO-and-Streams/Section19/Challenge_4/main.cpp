@@ -30,4 +30,3 @@ int main() {
     out_file.close();
     return 0;
 }
-
