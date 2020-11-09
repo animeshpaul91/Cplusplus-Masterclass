@@ -26,6 +26,8 @@ int main() {
     cout << total_words << " were searched" << endl;
     cout << "The Substring "<<substring<<" was found "<<occurences<<" times";
     cout << endl;
+    file.close();
+    
     return 0;
 }
 
