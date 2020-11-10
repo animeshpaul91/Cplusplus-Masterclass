@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Section20" Database="" Version="10.0.0">
   <Project Name="Macros" Path="Macros/Macros.project" Active="No"/>
-  <Project Name="FunctionTemplates" Path="FunctionTemplates/FunctionTemplates.project" Active="Yes"/>
+  <Project Name="FunctionTemplates" Path="FunctionTemplates/FunctionTemplates.project" Active="No"/>
   <Project Name="ClassTemplates" Path="ClassTemplates/ClassTemplates.project" Active="No"/>
-  <Project Name="ClassTemplateArray" Path="ClassTemplateArray/ClassTemplateArray.project" Active="No"/>
+  <Project Name="ClassTemplateArray" Path="ClassTemplateArray/ClassTemplateArray.project" Active="Yes"/>
   <Project Name="Iterators" Path="Iterators/Iterators.project" Active="No"/>
   <Project Name="Algorithms" Path="Algorithms/Algorithms.project" Active="No"/>
   <Project Name="Array" Path="Array/Array.project" Active="No"/>

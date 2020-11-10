@@ -14,7 +14,8 @@
   <Project Name="PointersChallenge" Path="PointersChallenge/PointersChallenge.project" Active="No"/>
   <Project Name="SumReference" Path="SumReference/SumReference.project" Active="No"/>
   <Project Name="Implicit_Return" Path="Implicit_Return/Implicit_Return.project" Active="No"/>
-  <Project Name="ArrayLength" Path="ArrayLength/ArrayLength.project" Active="Yes"/>
+  <Project Name="ArrayLength" Path="ArrayLength/ArrayLength.project" Active="No"/>
+  <Project Name="ReferenceFromFunction" Path="ReferenceFromFunction/ReferenceFromFunction.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -33,6 +34,7 @@
       <Project Name="SumReference" ConfigName="Debug"/>
       <Project Name="Implicit_Return" ConfigName="Debug"/>
       <Project Name="ArrayLength" ConfigName="Debug"/>
+      <Project Name="ReferenceFromFunction" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -51,6 +53,7 @@
       <Project Name="SumReference" ConfigName="Release"/>
       <Project Name="Implicit_Return" ConfigName="Release"/>
       <Project Name="ArrayLength" ConfigName="Release"/>
+      <Project Name="ReferenceFromFunction" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
