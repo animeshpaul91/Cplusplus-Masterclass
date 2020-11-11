@@ -9,7 +9,7 @@
 // display any vector of integers using range-based for loop
 void display(const std::vector<int> &vec) {
     std::cout << "[ ";
-    for (auto const &i: vec) {
+          for (auto const &i: vec) {
         std::cout << i << " ";
     }
     std::cout << "]" << std::endl;
@@ -62,8 +62,8 @@ void test3() {
     std::cout << "\n=============================" << std::endl;
     std::vector<int> nums1 {1, 2, 3, 4, 5};
 
-    std::vector<int>::const_iterator it1 = nums1.begin();
-    // auto it1 = nums1.cbegin();
+//    std::vector<int>::const_iterator it1 = nums1.begin();
+     auto it1 = nums1.cbegin();
     
     while (it1 != nums1.end()) {
         std::cout << *it1 << std::endl;
@@ -73,7 +73,7 @@ void test3() {
     // compiler error when we try to change element
     it1 = nums1.begin();
     while (it1 != nums1.end()) {
-       // *it1 = 0;   // Complier error - read only
+//        *it1 = 0;   // Complier error - read only
         it1++;
     }
 
@@ -121,12 +121,24 @@ void test5() {
     }
     
 }
+
+void test6() {
+    std::set<int> hash_set {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    std::set<int>::const_iterator it = hash_set.begin();
+    while (it != hash_set.end()) {
+        std::cout << *it << " ";
+        it++;
+    }
+    std::cout << std::endl;
+}
+
 int main() {
 
 //    test1();
 //    test2();
 //    test3();
 //    test4();
-    test5();
+//    test5();
+      test6();
     return 0;
 }
