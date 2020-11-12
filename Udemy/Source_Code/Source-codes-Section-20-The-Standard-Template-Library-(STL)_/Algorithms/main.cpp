@@ -107,6 +107,20 @@ void all_of_test() {
         std::cout << "Not all the elements are < 20" << std::endl;        
 }
 
+void any_of_test() {
+    std::vector<int> vec1 {1,3,5,7,9,1,3,13,19,5};
+    if (std::any_of(vec1.begin(), vec1.end(), [](int x) { return x > 10; }))
+        std::cout << "There is at least one element > 10" << std::endl;
+    else    
+        std::cout << "All the elements are < 10" << std::endl;
+    
+    if (std::all_of(vec1.begin(), vec1.end(), [](int x) { return x < 20; }))
+        std::cout << "There is at least one element < 20" << std::endl;
+    else    
+        std::cout << "All the elements are > 20" << std::endl;        
+}
+
+
 // Transform elements in a container - string in this example
 void string_transform_test() {
     std::cout << "\n========================" << std::endl;
@@ -118,11 +132,12 @@ void string_transform_test() {
 }
 
 int main() {
-    find_test();
+//    find_test();
 //    count_test();
 //    count_if_test();
 //    replace_test();
 //    all_of_test();
+      any_of_test();
 //    string_transform_test();
 
     return 0;
