@@ -5,8 +5,8 @@
   <Project Name="ClassTemplates" Path="ClassTemplates/ClassTemplates.project" Active="No"/>
   <Project Name="ClassTemplateArray" Path="ClassTemplateArray/ClassTemplateArray.project" Active="No"/>
   <Project Name="Iterators" Path="Iterators/Iterators.project" Active="No"/>
-  <Project Name="Algorithms" Path="Algorithms/Algorithms.project" Active="Yes"/>
-  <Project Name="Array" Path="Array/Array.project" Active="No"/>
+  <Project Name="Algorithms" Path="Algorithms/Algorithms.project" Active="No"/>
+  <Project Name="Array" Path="Array/Array.project" Active="Yes"/>
   <Project Name="Vector" Path="Vector/Vector.project" Active="No"/>
   <Project Name="Deque" Path="Deque/Deque.project" Active="No"/>
   <Project Name="Challenge_1" Path="Challenge_1/Challenge_1.project" Active="No"/>

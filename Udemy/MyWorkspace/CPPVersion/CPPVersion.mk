@@ -3,11 +3,11 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=Array
+ProjectName            :=CPPVersion
 ConfigurationName      :=Debug
-WorkspacePath          :=/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/Source_Code/Source-codes-Section-20-The-Standard-Template-Library-(STL)_
-ProjectPath            :=/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/Source_Code/Source-codes-Section-20-The-Standard-Template-Library-(STL)_/Array
-IntermediateDirectory  :=./Debug
+WorkspacePath          :=/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/MyWorkspace
+ProjectPath            :=/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/MyWorkspace/CPPVersion
+IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
@@ -32,10 +32,10 @@ Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
-ObjectsFileList        :="Array.txt"
+ObjectsFileList        :="CPPVersion.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=mkdir -p
-LinkOptions            :=  
+LinkOptions            :=  -static
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
 RcIncludePath          := 
@@ -50,7 +50,7 @@ LibPath                := $(LibraryPathSwitch).
 AR       := /usr/bin/ar rcu
 CXX      := /usr/bin/g++
 CC       := /usr/bin/gcc
-CXXFLAGS := -std=c++14 -Wall -g -O0 -std=c++14 -Wall $(Preprocessors)
+CXXFLAGS :=  -g -O0 -std=c++17 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
 AS       := /usr/bin/as
@@ -79,11 +79,11 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@test -d ./Debug || $(MakeDirCommand) ./Debug
+	@test -d $(ConfigurationName) || $(MakeDirCommand) $(ConfigurationName)
 
 
 $(IntermediateDirectory)/.d:
-	@test -d ./Debug || $(MakeDirCommand) ./Debug
+	@test -d $(ConfigurationName) || $(MakeDirCommand) $(ConfigurationName)
 
 PreBuild:
 
@@ -93,7 +93,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/Source_Code/Source-codes-Section-20-The-Standard-Template-Library-(STL)_/Array/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/media/animesh/OS/From_Old_PC/Certifications/Udemy/Cplusplus_Masterclass/Udemy/MyWorkspace/CPPVersion/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
@@ -103,6 +103,6 @@ $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 ## Clean
 ##
 clean:
-	$(RM) -r ./Debug/
+	$(RM) -r $(ConfigurationName)/
 
 
