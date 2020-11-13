@@ -9,6 +9,8 @@
 #include <iomanip>
 #include <limits>
 
+using namespace std;
+
 class Song {
     friend std::ostream &operator<<(std::ostream &os, const Song &s);
     std::string name;
@@ -46,6 +48,7 @@ std::ostream &operator<<(std::ostream &os, const Song &s) {
 
 void display_menu() {
     std::cout << "\nF - Play First Song" << std::endl;
+    std::cout << "E - Play Last Song" << std::endl;
     std::cout << "N - Play Next song" << std::endl;
     std::cout << "P - Play Previous song" << std::endl;
     std::cout << "A - Add and play a new Song at current location" << std::endl;
@@ -57,16 +60,24 @@ void display_menu() {
 void play_current_song(const Song &song) {
     // This function should display 
     // Playing: followed by the song that is playing
-   
-    std::cout << "You implement this function"<< std::endl;
+    cout << "\nNow Playing: "<<endl;
+    cout << song << endl;
 }
 
 void display_playlist(const std::list<Song> &playlist, const Song &current_song) {
     // This function should display the current playlist 
     // and then the current song playing.
-    
-    std::cout << "You implement this function" << std::endl;
+    cout << endl;
+    for (const auto &song: playlist)
+        cout << song << endl;
+    play_current_song(current_song);
 }
+
+void flush_input_stream() {
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+}
+
 
 int main() {
 
@@ -81,9 +92,69 @@ int main() {
     
     std::list<Song>::iterator current_song = playlist.begin();
     
-    std::cout << "To be implemented" << std::endl;
     // Your program logic goes here
-
+    char c {};
+    string song_name {}, song_artist {};
+    int song_rating {};
+    
+    do {
+        display_menu();
+        cin >> c;
+        c = tolower(c);
+        
+        switch(c)
+        {
+            case 'f':
+                      cout << "Playing First Song" <<endl;
+                      current_song = playlist.begin();
+                      play_current_song(*current_song);
+                      break;
+            case 'e':
+                      cout << "Playing Last Song" <<endl;
+                      current_song = playlist.end();
+                      current_song--;
+                      play_current_song(*current_song);
+                      break;
+            case 'n':
+                      cout << "Playing Next Song" <<endl;
+                      current_song++;
+                      if (current_song == playlist.end())
+                          current_song = playlist.begin();                                      
+                      play_current_song(*current_song);
+                      break;
+            case 'p':
+                      cout << "Playing Previous Song" <<endl;
+                      if (current_song == playlist.begin())
+                          current_song = playlist.end();
+                      current_song--;
+                      play_current_song(*current_song);
+                      break;
+            case 'a':
+                      flush_input_stream();
+                      cout << "Adding and Playing new Song" <<endl;
+                      cout << "Enter Song name: ";
+                      getline(cin, song_name);
+                      cout << "Enter Song artist: ";
+                      getline(cin, song_artist);
+                      cout << "Enter Song rating (1-5): ";
+                      cin >> song_rating;
+                      playlist.insert(current_song, Song{song_name, song_artist, song_rating});
+                      current_song--;
+                      play_current_song(*current_song);
+                      break;
+            case 'l':
+                      display_playlist(playlist, *current_song);
+                      break;
+            case 'q': 
+                      cout << "Quitting Application" <<endl;
+                      break;
+            default:
+                    cout << "\n Wrong Choice\n";
+        }
+        
+    } while (c != 'q'); 
+    
+    cout << endl;
     std::cout << "Thanks for listening!" << std::endl;
     return 0;
 }
