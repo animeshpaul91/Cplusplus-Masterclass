@@ -16,7 +16,8 @@
   <Project Name="Implicit_Return" Path="Implicit_Return/Implicit_Return.project" Active="No"/>
   <Project Name="ArrayLength" Path="ArrayLength/ArrayLength.project" Active="No"/>
   <Project Name="ReferenceFromFunction" Path="ReferenceFromFunction/ReferenceFromFunction.project" Active="No"/>
-  <Project Name="CPPVersion" Path="CPPVersion/CPPVersion.project" Active="Yes"/>
+  <Project Name="CPPVersion" Path="CPPVersion/CPPVersion.project" Active="No"/>
+  <Project Name="Mapget" Path="Mapget/Mapget.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -37,6 +38,7 @@
       <Project Name="ArrayLength" ConfigName="Debug"/>
       <Project Name="ReferenceFromFunction" ConfigName="Debug"/>
       <Project Name="CPPVersion" ConfigName="Debug"/>
+      <Project Name="Mapget" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -57,6 +59,7 @@
       <Project Name="ArrayLength" ConfigName="Release"/>
       <Project Name="ReferenceFromFunction" ConfigName="Release"/>
       <Project Name="CPPVersion" ConfigName="Release"/>
+      <Project Name="Mapget" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

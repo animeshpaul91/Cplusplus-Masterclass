@@ -1,6 +1,6 @@
 // Section 20
 // Set
-#include <iostream>
+ #include <iostream>
 #include <set>
 
 class Person {
