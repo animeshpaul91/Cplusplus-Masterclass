@@ -14,16 +14,16 @@
   <Project Name="Challenge_2" Path="Challenge_2/Challenge_2.project" Active="No"/>
   <Project Name="Challenge_2_Solution" Path="Challenge_2_Solution/Challenge_2_Solution.project" Active="No"/>
   <Project Name="List" Path="List/List.project" Active="No"/>
-  <Project Name="Challenge_3" Path="Challenge_3/Challenge_3.project" Active="No"/>
+  <Project Name="Challenge_3" Path="Challenge_3/Challenge_3.project" Active="Yes"/>
   <Project Name="Challenge_3_Solution" Path="Challenge_3_Solution/Challenge_3_Solution.project" Active="No"/>
   <Project Name="Challenge_4" Path="Challenge_4/Challenge_4.project" Active="No"/>
   <Project Name="Challenge_4_Solution" Path="Challenge_4_Solution/Challenge_4_Solution.project" Active="No"/>
   <Project Name="Set" Path="Set/Set.project" Active="No"/>
-  <Project Name="Map" Path="Map/Map.project" Active="Yes"/>
+  <Project Name="Map" Path="Map/Map.project" Active="No"/>
   <Project Name="Stack" Path="Stack/Stack.project" Active="No"/>
   <Project Name="Queue" Path="Queue/Queue.project" Active="No"/>
   <Project Name="PriorityQueue" Path="PriorityQueue/PriorityQueue.project" Active="No"/>
-  <Project Name="Source-codes-Section-20-The-Standard-Template-Library-(STL)_" Path="Source-codes-Section-20-The-Standard-Template-Library-(STL)_/Source-codes-Section-20-The-Standard-Template-Library-(STL)_.project"/>
+  <Project Name="Source-codes-Section-20-The-Standard-Template-Library-(STL)_" Path="Source-codes-Section-20-The-Standard-Template-Library-(STL)_/Source-codes-Section-20-The-Standard-Template-Library-(STL)_.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

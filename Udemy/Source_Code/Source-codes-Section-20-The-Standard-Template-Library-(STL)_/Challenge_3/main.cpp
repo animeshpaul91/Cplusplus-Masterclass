@@ -10,6 +10,8 @@
 #include <string>
 #include <iomanip>
 
+using namespace std;
+
 // Used for Part1
 // Display the word and count from the 
 // std::map<std::string, int>
@@ -59,13 +61,13 @@ std::string clean_string(const std::string &s) {
 
 void part1() {
     std::map<std::string, int> words;
-    std::string line;       
     std::string word;   
     std::ifstream in_file {"../words.txt"};
+    
     if (in_file) {
-        
-        // You implement this code
-        
+        while (in_file >> word)
+            words[word]++;
+                
         in_file.close();
         display_words(words);
     } else {
@@ -79,10 +81,17 @@ void part2() {
     std::map<std::string, std::set<int>> words;
     std::string line;
     std::string word;
+    size_t line_number = 0;
     std::ifstream in_file {"../words.txt"};
+    
     if (in_file) {
-     
-        // You implement this code
+        while (getline(in_file, line))  // Read one line at a time
+        {
+            ++line_number;
+            istringstream iss {line};
+            while (iss >> word)
+                words[clean_string(word)].insert(line_number);
+        }
         
         in_file.close();
         display_words(words);
