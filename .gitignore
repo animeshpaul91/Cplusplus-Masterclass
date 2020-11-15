@@ -25,10 +25,5 @@ Udemy/MyWorkspace/.codelite
 bin
 bin/ofMaker
 lib
-*.mk
-*.workspace.session
-*.project
-*.workspace
-*.txt
 
-Udemy/Source_Code/*/.codelite
+Udemy/Source_Code/**/.codelite

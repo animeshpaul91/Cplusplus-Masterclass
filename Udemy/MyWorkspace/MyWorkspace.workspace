@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="MyWorkspace" Database="" Version="10000">
+  <Project Name="SizeOf" Path="SizeOf/SizeOf.project" Active="No"/>
+  <Project Name="Vectors" Path="Vectors/Vectors.project" Active="No"/>
+  <Project Name="USD" Path="USD/USD.project" Active="No"/>
+  <Project Name="ControlChallenge" Path="ControlChallenge/ControlChallenge.project" Active="No"/>
+  <Project Name="CStyleStrings" Path="CStyleStrings/CStyleStrings.project" Active="No"/>
+  <Project Name="CplusplusStrings" Path="CplusplusStrings/CplusplusStrings.project" Active="No"/>
+  <Project Name="StringChallenge" Path="StringChallenge/StringChallenge.project" Active="No"/>
+  <Project Name="Pointers" Path="Pointers/Pointers.project" Active="No"/>
+  <Project Name="Pointers_and_const" Path="Pointers_and_const/Pointers_and_const.project" Active="No"/>
+  <Project Name="References" Path="References/References.project" Active="No"/>
+  <Project Name="Debugger" Path="Debugger/Debugger.project" Active="No"/>
+  <Project Name="PointersChallenge" Path="PointersChallenge/PointersChallenge.project" Active="No"/>
+  <Project Name="SumReference" Path="SumReference/SumReference.project" Active="No"/>
+  <Project Name="Implicit_Return" Path="Implicit_Return/Implicit_Return.project" Active="No"/>
+  <Project Name="ArrayLength" Path="ArrayLength/ArrayLength.project" Active="No"/>
+  <Project Name="ReferenceFromFunction" Path="ReferenceFromFunction/ReferenceFromFunction.project" Active="No"/>
+  <Project Name="CPPVersion" Path="CPPVersion/CPPVersion.project" Active="No"/>
+  <Project Name="Mapget" Path="Mapget/Mapget.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="SizeOf" ConfigName="Debug"/>
+      <Project Name="Vectors" ConfigName="Debug"/>
+      <Project Name="USD" ConfigName="Debug"/>
+      <Project Name="ControlChallenge" ConfigName="Debug"/>
+      <Project Name="CStyleStrings" ConfigName="Debug"/>
+      <Project Name="CplusplusStrings" ConfigName="Debug"/>
+      <Project Name="StringChallenge" ConfigName="Debug"/>
+      <Project Name="Pointers" ConfigName="Debug"/>
+      <Project Name="Pointers_and_const" ConfigName="Debug"/>
+      <Project Name="References" ConfigName="Debug"/>
+      <Project Name="Debugger" ConfigName="Debug"/>
+      <Project Name="PointersChallenge" ConfigName="Debug"/>
+      <Project Name="SumReference" ConfigName="Debug"/>
+      <Project Name="Implicit_Return" ConfigName="Debug"/>
+      <Project Name="ArrayLength" ConfigName="Debug"/>
+      <Project Name="ReferenceFromFunction" ConfigName="Debug"/>
+      <Project Name="CPPVersion" ConfigName="Debug"/>
+      <Project Name="Mapget" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="SizeOf" ConfigName="Release"/>
+      <Project Name="Vectors" ConfigName="Release"/>
+      <Project Name="USD" ConfigName="Release"/>
+      <Project Name="ControlChallenge" ConfigName="Release"/>
+      <Project Name="CStyleStrings" ConfigName="Release"/>
+      <Project Name="CplusplusStrings" ConfigName="Release"/>
+      <Project Name="StringChallenge" ConfigName="Release"/>
+      <Project Name="Pointers" ConfigName="Release"/>
+      <Project Name="Pointers_and_const" ConfigName="Release"/>
+      <Project Name="References" ConfigName="Release"/>
+      <Project Name="Debugger" ConfigName="Release"/>
+      <Project Name="PointersChallenge" ConfigName="Release"/>
+      <Project Name="SumReference" ConfigName="Release"/>
+      <Project Name="Implicit_Return" ConfigName="Release"/>
+      <Project Name="ArrayLength" ConfigName="Release"/>
+      <Project Name="ReferenceFromFunction" ConfigName="Release"/>
+      <Project Name="CPPVersion" ConfigName="Release"/>
+      <Project Name="Mapget" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
