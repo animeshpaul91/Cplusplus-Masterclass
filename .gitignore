@@ -27,3 +27,4 @@ bin/ofMaker
 lib
 *.mk
 *.workspace.session
+*.project
