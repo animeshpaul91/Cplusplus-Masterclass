@@ -8,11 +8,32 @@
 #include <string>
 #include <iomanip>
 
+using namespace std;
+
 bool is_palindrome(const std::string& s)
 {
     // You must implement this function.
     // Since we are learning the STL - use a stack and a queue to solve the problem.
-    return false;
+    queue<char> que {};
+    stack<char> stk {};
+    
+    for(const char &c: s)
+        if (isalpha(c))
+        {
+            stk.push(tolower(c));
+            que.push(tolower(c));
+        }
+    
+    while(!stk.empty()) {
+        char front = que.front();
+        char back = stk.top();
+        que.pop();
+        stk.pop();        
+        if (front != back)
+            return false;
+    }
+    
+    return true;
 }
 
 int main()
