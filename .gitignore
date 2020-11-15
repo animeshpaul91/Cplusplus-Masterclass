@@ -15,3 +15,15 @@ Udemy/MyWorkspace/.codelite
 *.o
 *.pdf
 *.d
+
+
+*.session
+*.tags
+*.d
+*.o
+*.pyc
+bin
+bin/ofMaker
+lib
+*.mk
+*.workspace.session
